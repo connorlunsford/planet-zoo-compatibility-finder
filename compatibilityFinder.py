@@ -234,10 +234,10 @@ def print_compatibility():
 
 def import_csv():
     '''Asks the user for a csv file_name, returns a dictionary with a new animal list and matrix'''
-    file_name = input("Enter file name without extension: ")
+    file_name = input("Enter file name (with extension): ")
     compatibility_matrix = []
     length = 0
-    with open(file_name + '.csv') as file:
+    with open(file_name) as file:
         lines = file.readlines()
         for i in range(0, len(lines)):
             items = lines[i].split(',')
@@ -299,6 +299,7 @@ if __name__ == '__main__':
         animal_list = data['animal_list']
     compare = -1
     while compare < 0 or compare > 8:
+        print_compatibility()
         compare = int(input("What compatability level do you want to find matches at (enter 0-8): "))
         if compare < 0 or compare > 8:
             print("Incorrect input. Please enter a number between 0 and 8.")
@@ -319,10 +320,10 @@ if __name__ == '__main__':
         for q in j:
             print(animal_list[int(q)])
         print('---------------------------------')
-    answer = input("Do you want to export this data into a CSV? (Y/N)? ")
+    answer = input("Do you want to export this data into a file? (Y/N)? ")
     if answer in ['Y','y','yes']:
-        new_file = input('Enter the file name (without extension): ')
-        with open(new_file + '.csv', 'x') as f:
+        new_file = input('Enter the file name: ')
+        with open(new_file, 'x') as f:
             for match_list in matches:
                 match_string = ''
                 for match in match_list:
