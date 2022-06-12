@@ -1,8 +1,110 @@
 def generate_animal_list():
-    animal_list = {1: 'Aardvark', 2: 'African_Buffalo', 3: 'African_Penguin', 4: 'African_Savannah_Elephant', 5: 'African_Wild_Dog', 6: 'Aldabra_Giant_Tortoise', 7: 'Alpine_Ibex', 8: 'American_Alligator', 9: 'American_Bison', 10: 'Arctic_Fox', 11: 'Arctic_Wolf', 12: 'Asian_Small-Clawed_Otter', 13: 'Bactrian_Camel', 14: "Baird's_Tapir", 15: 'Bengal_Tiger', 16: 'Binturong', 17: 'Black_Wildebeest', 18: 'Black-And-White_Ruffed_Lemur', 19: 'Black-Tailed_Prairie_Dog', 20: 'Bongo', 21: 'Bonobo', 22: 'Bornean_Orangutan', 23: 'California_Sea_Lion', 24: 'Capybara', 25: 'Cheetah', 26: 'Chinese_Pangolin', 27: 'Clouded_Leopard', 28: 'Col._W-F_Capuchin_Monkey', 29: 'Common_Ostrich', 30: 'Common_Warthog', 31: 'Cougar', 32: "Cuvier's_Dwarf_Caiman", 33: 'Dall_Sheep', 34: 'Dhole', 35: 'Dingo', 36: 'Eurasian_Lynx', 37: 'European_Badger', 38: 'European_Fallow_Deer', 39: 'Fennec_Fox', 40: 'Formosan_Black_Bear', 41: 'Galapagos_Giant_Tortoise', 42: 'Gemsbok', 43: 'Gharial', 44: 'Giant_Anteater', 45: 'Giant_Otter', 46: 'Giant_Panda', 47: 'Gray_Seal', 48: 'Greater_Flamingo', 49: 'Grizzly_Bear', 50: 'Himalayan_Brown_Bear', 51: 'Hippopotamus', 52: 'Indian_Elephant', 53: 'Indian_Peafowl', 54: 'Indian_Rhinoceros', 55: 'Jaguar', 56: 'Japanese_Macaque', 57: 'King_Penguin', 58: 'Koala', 59: 'Komodo_Dragon', 60: 'Llama', 61: 'Malayan_Tapir', 62: 'Mandrill', 63: 'Meerkat', 64: 'Moose', 65: 'Nile_Lechwe', 66: 'Nile_Monitor', 67: 'North_American_Beaver', 68: 'North_Sulawesi_Babirusa', 69: 'Nyala', 70: 'Okapi', 71: 'Plains_Zebra', 72: 'Platypus', 73: 'Polar_Bear', 74: 'Proboscis_Monkey', 75: 'Pronghorn_Antelope', 76: 'Pygmy_Hippo', 77: 'Red_Kangaroo', 78: 'Red_Panda', 79: 'Red_Ruffed_Lemur', 80: 'Red-Crowned_Crane', 81: 'Reindeer', 82: 'Reticulated_Giraffe', 83: 'Ring_Tailed_Lemur', 84: 'Sable_Antelope', 85: 'Saltwater_Crocodile', 86: 'Siberian_Tiger', 87: 'Snow_Leopard', 88: 'Southern_Cassowary', 89: 'Southern_White_Rhinoceros', 90: 'Spectacled_Caiman', 91: 'Spotted_Hyena', 92: 'Springbok', 93: 'Sun_Bear', 94: "Thomson's_Gazelle", 95: 'Timber_Wolf', 96: 'West_African_Lion', 97: 'Western_Chimpanzee', 98: 'Western_Lowland_Gorilla', 99: 'Wild_Water_Buffalo'}
+    '''returns a dictionary of every animal in the game in alphabetical order'''
+    animal_list = {
+        1: 'Aardvark', 
+        2: 'African_Buffalo', 
+        3: 'African_Penguin', 
+        4: 'African_Savannah_Elephant', 
+        5: 'African_Wild_Dog', 
+        6: 'Aldabra_Giant_Tortoise', 
+        7: 'Alpine_Ibex', 
+        8: 'American_Alligator', 
+        9: 'American_Bison', 
+        0: 'Arctic_Fox', 
+        11: 'Arctic_Wolf', 
+        12: 'Asian_Small-Clawed_Otter', 
+        13: 'Bactrian_Camel', 
+        14: "Baird's_Tapir", 
+        15: 'Bengal_Tiger', 
+        16: 'Binturong', 
+        17: 'Black_Wildebeest', 
+        18: 'Black-And-White_Ruffed_Lemur', 
+        19: 'Black-Tailed_Prairie_Dog', 
+        20: 'Bongo', 
+        21: 'Bonobo', 
+        22: 'Bornean_Orangutan', 
+        23: 'California_Sea_Lion', 
+        24: 'Capybara', 
+        25: 'Cheetah', 
+        26: 'Chinese_Pangolin', 
+        27: 'Clouded_Leopard', 
+        28: 'Col._W-F_Capuchin_Monkey', 
+        29: 'Common_Ostrich', 
+        30: 'Common_Warthog', 
+        31: 'Cougar', 
+        32: "Cuvier's_Dwarf_Caiman", 
+        33: 'Dall_Sheep', 
+        34: 'Dhole', 
+        35: 'Dingo', 
+        36: 'Eurasian_Lynx', 
+        37: 'European_Badger', 
+        38: 'European_Fallow_Deer', 
+        39: 'Fennec_Fox', 
+        40: 'Formosan_Black_Bear', 
+        41: 'Galapagos_Giant_Tortoise', 
+        42: 'Gemsbok', 
+        43: 'Gharial', 
+        44: 'Giant_Anteater', 
+        45: 'Giant_Otter', 
+        46: 'Giant_Panda', 
+        47: 'Gray_Seal', 
+        48: 'Greater_Flamingo', 
+        49: 'Grizzly_Bear', 
+        50: 'Himalayan_Brown_Bear', 
+        51: 'Hippopotamus', 
+        52: 'Indian_Elephant', 
+        53: 'Indian_Peafowl', 
+        54: 'Indian_Rhinoceros', 
+        55: 'Jaguar', 
+        56: 'Japanese_Macaque', 
+        57: 'King_Penguin', 
+        58: 'Koala',
+        59: 'Komodo_Dragon', 
+        60: 'Llama', 
+        61: 'Malayan_Tapir', 
+        62: 'Mandrill', 
+        63: 'Meerkat', 
+        64: 'Moose', 
+        65: 'Nile_Lechwe', 
+        66: 'Nile_Monitor', 
+        67: 'North_American_Beaver', 
+        68: 'North_Sulawesi_Babirusa', 
+        69: 'Nyala', 
+        70: 'Okapi', 
+        71: 'Plains_Zebra', 
+        72: 'Platypus', 
+        73: 'Polar_Bear', 
+        74: 'Proboscis_Monkey', 
+        75: 'Pronghorn_Antelope', 
+        76: 'Pygmy_Hippo', 
+        77: 'Red_Kangaroo', 
+        78: 'Red_Panda', 
+        79: 'Red_Ruffed_Lemur', 
+        80: 'Red-Crowned_Crane', 
+        81: 'Reindeer', 
+        82: 'Reticulated_Giraffe', 
+        83: 'Ring_Tailed_Lemur', 
+        84: 'Sable_Antelope', 
+        85: 'Saltwater_Crocodile', 
+        86: 'Siberian_Tiger', 
+        87: 'Snow_Leopard', 
+        88: 'Southern_Cassowary', 
+        89: 'Southern_White_Rhinoceros', 
+        90: 'Spectacled_Caiman', 
+        91: 'Spotted_Hyena', 
+        92: 'Springbok', 
+        93: 'Sun_Bear', 
+        94: "Thomson's_Gazelle", 
+        95: 'Timber_Wolf', 
+        96: 'West_African_Lion', 
+        97: 'Western_Chimpanzee', 
+        98: 'Western_Lowland_Gorilla', 
+        99: 'Wild_Water_Buffalo'
+    }
     return animal_list
 
 def generate_matrix():
+    '''returns a matrix of compatability values for every animal in the game'''
     compat = [['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
         ['Aardvark', '', '7', '3', '7', '0', '7', '4', '0', '5', '4', '0', '2', '3', '2', '0', '2', '7', '7', '5', '7', '7', '2', '3', '2', '0', '2', '0', '2', '7', '7', '0', '2', '5', '0', '0', '0', '2', '5', '3', '0', '5', '3', '2', '5', '2', '2', '3', '6', '0', '0', '6', '2', '5', '5', '0', '1', '5', '2', '0', '5', '2', '7', '8', '5', '7', '6', '2', '2', '7', '7', '7', '4', '0', '2', '5', '6', '5', '2', '7', '5', '5', '7', '7', '7', '0', '0', '0', '2', '7', '2', '0', '7', '2', '7', '0', '0', '7', '7', '5'],
         ['African_Buffalo', '7', '', '3', '7', '7', '7', '5', '0', '5', '4', '4', '2', '3', '2', '0', '2', '8', '7', '5', '7', '7', '2', '3', '2', '7', '2', '2', '2', '8', '8', '2', '2', '5', '2', '5', '2', '2', '5', '3', '2', '5', '3', '2', '5', '2', '2', '3', '7', '0', '0', '7', '2', '5', '5', '2', '1', '5', '2', '2', '5', '2', '7', '7', '5', '8', '7', '2', '2', '7', '7', '8', '5', '0', '2', '5', '7', '5', '2', '7', '5', '5', '8', '7', '8', '0', '0', '3', '2', '8', '2', '7', '8', '2', '8', '4', '0', '7', '7', '5'],
@@ -131,11 +233,11 @@ def print_compatibility():
 
 
 def import_csv():
-    # file_name = input("Enter file name with extension: ")s
-    file_name = "compatibility.csv"
+    '''Asks the user for a csv file_name, returns a dictionary with a new animal list and matrix'''
+    file_name = input("Enter file name without extension: ")
     compatibility_matrix = []
     length = 0
-    with open(file_name) as file:
+    with open(file_name + '.csv') as file:
         lines = file.readlines()
         for i in range(0, len(lines)):
             items = lines[i].split(',')
@@ -146,12 +248,25 @@ def import_csv():
     for i in range(0, length):
         blank.append('')
     compatibility_matrix.insert(0, blank)
+    print('New compatability matrix:')
     for item in compatibility_matrix:
         print(item)
-    return compatibility_matrix
+    animal_list = {}
+    for i in range(1,len(compatibility_matrix)):
+        animal_list[i] = compatibility_matrix[i][0]
+    print('New animal list:')
+    for key in animal_list.keys():
+        print(key + ': ' + animal_list[key])
+    data = {
+        'compatability_matrix': compatibility_matrix,
+        'animal_list': animal_list
+    }
+    return data
 
 
 def recursive_search(matrix: list, matches: list, compare: int, cur_animal: int, cur_matches: list):
+    '''Recursively searches through matrix to find a list of matches that have a greater compatability 
+    rating than compare with the cur_animal and all animals in cur_matches'''
     print("Loading...")
     cur_matches.append(cur_animal)
     cur_matches.sort()
@@ -177,6 +292,11 @@ def recursive_search(matrix: list, matches: list, compare: int, cur_animal: int,
 if __name__ == '__main__':
     matrix = generate_matrix()
     animal_list = generate_animal_list()
+    answer = input("Do you want to import animal data in the form of a csv file? (Y/N)? ")
+    if answer in ['Y','y','yes']:
+        data = import_csv()
+        matrix = data['compatability_matrix']
+        animal_list = data['animal_list']
     compare = -1
     while compare < 0 or compare > 8:
         compare = int(input("What compatability level do you want to find matches at (enter 0-8): "))
